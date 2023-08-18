@@ -42,9 +42,9 @@ resource "aws_route" "igw" {
 #  nat_gateway_id         = element(aws_nat_gateway.ngw.*.id, count.index)
 #}
 
-output "subnet" {
-  value = module.subnets
-}
+#output "subnet" {
+#  value = module.subnets
+#}
 
 output "public_subnet_ids" {
   value = local.public_subnet_ids
